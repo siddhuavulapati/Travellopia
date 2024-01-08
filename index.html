@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>moreDetails</title>
+    <style>
+        #moreContent {
+            max-height: 150px;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .more-container.expanded #moreContent {
+            max-height: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="more-container" id="moreContainer">
+        <div class="more-content" id="moreContent">
+            <p>Discover our Europe tours Adventure awaits, right on your doorstep! With so many cultures and countries
+                just a short flight away, our unique Europe tours offer far more than you could imagine. From glorious
+                summers spent relaxing on beaches or exploring historic towns, to snowy winters spent on the slopes or
+                sipping hot chocolate by the fire, our adventure holidays in Europe are designed to keep you entertained
+                and captivated, season by season.</p>
+            <p>Stretching from the countries of the former USSR to the Atlantic islands of Iceland and Greenland, Europe
+                is one of the planet’s most beautifully diverse regions on the planet. Explore a new culture, delve into
+                ancient ruins, or make new friends on an action-packed adventure: our trips to Europe let you see and
+                experience it all. Start building your dream trip, with our expert local guides, and choose by destination
+                or type of activity. Whether you want to travel to Italy, Spain, Croatia, Portugal or Greece, each
+                country or region has its own unique offering, and is sure to be an incredible adventure.</p>
+                
+        </div>
+        <a href="#" id="readMoreBtn" onclick="toggleContent()">Read more</a>
+
+        <div class="cta-box">
+            <h2>Ready to explore</h2>
+            <p>For inquiries and bookings, call us at:</p>
+            <a href="tel:+123456789" class="cta-button">Call Now: +1 (234) 567-89</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
